@@ -21,6 +21,10 @@
 		8E52D0D221E07DD100E8BD9C /* UIImage+Extention.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E52D0D121E07DD100E8BD9C /* UIImage+Extention.m */; };
 		8E52D0D621E09E8000E8BD9C /* TestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E52D0D421E09E8000E8BD9C /* TestVC.m */; };
 		8E52D0D721E09E8000E8BD9C /* TestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E52D0D521E09E8000E8BD9C /* TestVC.xib */; };
+		8E52D0DB21E0AA3D00E8BD9C /* WTMaskGuideVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E52D0DA21E0AA3D00E8BD9C /* WTMaskGuideVC.m */; };
+		8E52D0DE21E0AA5300E8BD9C /* HWGuidePageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E52D0DC21E0AA5300E8BD9C /* HWGuidePageManager.m */; };
+		8E52D0E221E0AAC500E8BD9C /* ly.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E52D0E021E0AAC500E8BD9C /* ly.png */; };
+		8E52D0E321E0AAC500E8BD9C /* hi.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E52D0E121E0AAC500E8BD9C /* hi.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +74,12 @@
 		8E52D0D321E09E8000E8BD9C /* TestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC.h; sourceTree = "<group>"; };
 		8E52D0D421E09E8000E8BD9C /* TestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC.m; sourceTree = "<group>"; };
 		8E52D0D521E09E8000E8BD9C /* TestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestVC.xib; sourceTree = "<group>"; };
+		8E52D0D921E0AA3D00E8BD9C /* WTMaskGuideVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTMaskGuideVC.h; sourceTree = "<group>"; };
+		8E52D0DA21E0AA3D00E8BD9C /* WTMaskGuideVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTMaskGuideVC.m; sourceTree = "<group>"; };
+		8E52D0DC21E0AA5300E8BD9C /* HWGuidePageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWGuidePageManager.m; sourceTree = "<group>"; };
+		8E52D0DD21E0AA5300E8BD9C /* HWGuidePageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWGuidePageManager.h; sourceTree = "<group>"; };
+		8E52D0E021E0AAC500E8BD9C /* ly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ly.png; sourceTree = "<group>"; };
+		8E52D0E121E0AAC500E8BD9C /* hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hi.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +181,7 @@
 		8E52D0C721E0591500E8BD9C /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				8E52D0D821E0AA2300E8BD9C /* MaskGuide */,
 				8E52D0C821E0591E00E8BD9C /* RichTextClick */,
 			);
 			path = UI;
@@ -194,6 +205,27 @@
 				8E52D0D121E07DD100E8BD9C /* UIImage+Extention.m */,
 			);
 			path = category;
+			sourceTree = "<group>";
+		};
+		8E52D0D821E0AA2300E8BD9C /* MaskGuide */ = {
+			isa = PBXGroup;
+			children = (
+				8E52D0DF21E0AABD00E8BD9C /* images */,
+				8E52D0D921E0AA3D00E8BD9C /* WTMaskGuideVC.h */,
+				8E52D0DA21E0AA3D00E8BD9C /* WTMaskGuideVC.m */,
+				8E52D0DD21E0AA5300E8BD9C /* HWGuidePageManager.h */,
+				8E52D0DC21E0AA5300E8BD9C /* HWGuidePageManager.m */,
+			);
+			path = MaskGuide;
+			sourceTree = "<group>";
+		};
+		8E52D0DF21E0AABD00E8BD9C /* images */ = {
+			isa = PBXGroup;
+			children = (
+				8E52D0E121E0AAC500E8BD9C /* hi.png */,
+				8E52D0E021E0AAC500E8BD9C /* ly.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 		ACDDB8F6490FD249D856A185 /* Pods */ = {
@@ -318,6 +350,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E52D0E321E0AAC500E8BD9C /* hi.png in Resources */,
+				8E52D0E221E0AAC500E8BD9C /* ly.png in Resources */,
 				8E52D0D721E09E8000E8BD9C /* TestVC.xib in Resources */,
 				8E52D09E21E054BB00E8BD9C /* LaunchScreen.storyboard in Resources */,
 				8E52D0C621E058E600E8BD9C /* main.plist in Resources */,
@@ -385,6 +419,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E52D0DB21E0AA3D00E8BD9C /* WTMaskGuideVC.m in Sources */,
 				8E52D0D221E07DD100E8BD9C /* UIImage+Extention.m in Sources */,
 				8E52D0CE21E05E6100E8BD9C /* WTWebViewVC.m in Sources */,
 				8E52D09621E054BA00E8BD9C /* ViewController.m in Sources */,
@@ -392,6 +427,7 @@
 				8E52D0A121E054BB00E8BD9C /* main.m in Sources */,
 				8E52D09321E054BA00E8BD9C /* AppDelegate.m in Sources */,
 				8E52D0CB21E0594300E8BD9C /* WTRichTextClickVC.m in Sources */,
+				8E52D0DE21E0AA5300E8BD9C /* HWGuidePageManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
