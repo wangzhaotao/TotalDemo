@@ -1,0 +1,24 @@
+//
+//  TotalDemo.pch
+//  TotalDemo
+//
+//  Created by ocean on 2019/1/5.
+//  Copyright © 2019年 wzt. All rights reserved.
+//
+
+#ifndef TotalDemo_pch
+#define TotalDemo_pch
+
+#import "Masonry.h"
+#import "UIImage+Extention.h"
+
+#define iColor(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+#define iGlobalFocusColor iColor(0x2b, 0x92, 0xf9, 1)
+
+#define iFont(size) [UIFont systemFontOfSize:(size)]
+#define iBFont(size) [UIFont boldSystemFontOfSize:(size)]
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* TotalDemo_pch */

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>datas</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>富文本点击事件</string>
+			<key>method</key>
+			<string>clickCellAction:</string>
+			<key>vc</key>
+			<string>WTRichTextClickVC</string>
+		</dict>
+	</array>
+</dict>
+</plist>
