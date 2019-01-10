@@ -48,10 +48,13 @@
 
     // 遮盖视图
     CGRect frame = [UIScreen mainScreen].bounds;
-    UIView *bgView = [[UIView alloc] initWithFrame:frame];
+    UIView *bgView = [[UIView alloc] init]; //WithFrame:frame
     bgView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.7f];
     [bgView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)]];
     [[UIApplication sharedApplication].keyWindow addSubview:bgView];
+    [bgView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.leading.bottom.trailing.equalTo(@0);
+    }];
     
     // 信息提示视图
     UIImageView *imgView = [[UIImageView alloc] init];
