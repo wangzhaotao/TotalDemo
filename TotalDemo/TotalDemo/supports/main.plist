@@ -6,6 +6,14 @@
 	<array>
 		<dict>
 			<key>title</key>
+			<string>刷新按钮</string>
+			<key>method</key>
+			<string>clickCellAction:</string>
+			<key>vc</key>
+			<string>WTRefreshBtnVC</string>
+		</dict>
+		<dict>
+			<key>title</key>
 			<string>富文本点击事件</string>
 			<key>method</key>
 			<string>clickCellAction:</string>

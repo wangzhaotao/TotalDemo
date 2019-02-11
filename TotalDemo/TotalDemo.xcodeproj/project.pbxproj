@@ -25,6 +25,8 @@
 		8E52D0DE21E0AA5300E8BD9C /* HWGuidePageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E52D0DC21E0AA5300E8BD9C /* HWGuidePageManager.m */; };
 		8E52D0E221E0AAC500E8BD9C /* ly.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E52D0E021E0AAC500E8BD9C /* ly.png */; };
 		8E52D0E321E0AAC500E8BD9C /* hi.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E52D0E121E0AAC500E8BD9C /* hi.png */; };
+		8ECCAA6E2211855000A25A0F /* BCFLRefreshBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECCAA6D2211855000A25A0F /* BCFLRefreshBtn.m */; };
+		8ECCAA712211857C00A25A0F /* WTRefreshBtnVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECCAA702211857C00A25A0F /* WTRefreshBtnVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,10 @@
 		8E52D0DD21E0AA5300E8BD9C /* HWGuidePageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWGuidePageManager.h; sourceTree = "<group>"; };
 		8E52D0E021E0AAC500E8BD9C /* ly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ly.png; sourceTree = "<group>"; };
 		8E52D0E121E0AAC500E8BD9C /* hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hi.png; sourceTree = "<group>"; };
+		8ECCAA6C2211855000A25A0F /* BCFLRefreshBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCFLRefreshBtn.h; sourceTree = "<group>"; };
+		8ECCAA6D2211855000A25A0F /* BCFLRefreshBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCFLRefreshBtn.m; sourceTree = "<group>"; };
+		8ECCAA6F2211857C00A25A0F /* WTRefreshBtnVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTRefreshBtnVC.h; sourceTree = "<group>"; };
+		8ECCAA702211857C00A25A0F /* WTRefreshBtnVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTRefreshBtnVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +187,7 @@
 		8E52D0C721E0591500E8BD9C /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				8ECCAA6B221184D300A25A0F /* RefreshButton */,
 				8E52D0D821E0AA2300E8BD9C /* MaskGuide */,
 				8E52D0C821E0591E00E8BD9C /* RichTextClick */,
 			);
@@ -226,6 +233,17 @@
 				8E52D0E021E0AAC500E8BD9C /* ly.png */,
 			);
 			path = images;
+			sourceTree = "<group>";
+		};
+		8ECCAA6B221184D300A25A0F /* RefreshButton */ = {
+			isa = PBXGroup;
+			children = (
+				8ECCAA6C2211855000A25A0F /* BCFLRefreshBtn.h */,
+				8ECCAA6D2211855000A25A0F /* BCFLRefreshBtn.m */,
+				8ECCAA6F2211857C00A25A0F /* WTRefreshBtnVC.h */,
+				8ECCAA702211857C00A25A0F /* WTRefreshBtnVC.m */,
+			);
+			path = RefreshButton;
 			sourceTree = "<group>";
 		};
 		ACDDB8F6490FD249D856A185 /* Pods */ = {
@@ -419,6 +437,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ECCAA712211857C00A25A0F /* WTRefreshBtnVC.m in Sources */,
 				8E52D0DB21E0AA3D00E8BD9C /* WTMaskGuideVC.m in Sources */,
 				8E52D0D221E07DD100E8BD9C /* UIImage+Extention.m in Sources */,
 				8E52D0CE21E05E6100E8BD9C /* WTWebViewVC.m in Sources */,
@@ -428,6 +447,7 @@
 				8E52D09321E054BA00E8BD9C /* AppDelegate.m in Sources */,
 				8E52D0CB21E0594300E8BD9C /* WTRichTextClickVC.m in Sources */,
 				8E52D0DE21E0AA5300E8BD9C /* HWGuidePageManager.m in Sources */,
+				8ECCAA6E2211855000A25A0F /* BCFLRefreshBtn.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
