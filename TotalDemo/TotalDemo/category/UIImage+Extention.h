@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIImage (Extention)
 
 + (instancetype)img4Color:(UIColor *)color;
+-(instancetype)resizableStretchImg;
 
 @end
 

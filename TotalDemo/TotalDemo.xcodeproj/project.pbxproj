@@ -26,6 +26,16 @@
 		8E52D0DE21E0AA5300E8BD9C /* HWGuidePageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E52D0DC21E0AA5300E8BD9C /* HWGuidePageManager.m */; };
 		8E52D0E221E0AAC500E8BD9C /* ly.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E52D0E021E0AAC500E8BD9C /* ly.png */; };
 		8E52D0E321E0AAC500E8BD9C /* hi.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E52D0E121E0AAC500E8BD9C /* hi.png */; };
+		8EB93CF2222F5BE1005FAF7B /* BCNewGuidePageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB93CF1222F5BE1005FAF7B /* BCNewGuidePageManager.m */; };
+		8EB93CF6222F5D6B005FAF7B /* WztUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB93CF5222F5D6B005FAF7B /* WztUtils.m */; };
+		8EB93CF9222F5F39005FAF7B /* UIViewController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB93CF8222F5F39005FAF7B /* UIViewController+Extension.m */; };
+		8EB93CFC222F5FB8005FAF7B /* YFWeakRef.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB93CFA222F5FB8005FAF7B /* YFWeakRef.m */; };
+		8EB93CFF222F6109005FAF7B /* IProUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB93CFE222F6109005FAF7B /* IProUtil.m */; };
+		8EB93D02222F6210005FAF7B /* WTGuidePage1VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB93D01222F6210005FAF7B /* WTGuidePage1VC.m */; };
+		8EB93D05222F621F005FAF7B /* WTGuidePage2VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB93D04222F621F005FAF7B /* WTGuidePage2VC.m */; };
+		8EB93D08222F622F005FAF7B /* WTGuidePage3VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB93D07222F622F005FAF7B /* WTGuidePage3VC.m */; };
+		8EB93D0B222F623D005FAF7B /* WTGuidePage4VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB93D0A222F623D005FAF7B /* WTGuidePage4VC.m */; };
+		8EB93D0E222F6248005FAF7B /* WTGuidePage5VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB93D0D222F6248005FAF7B /* WTGuidePage5VC.m */; };
 		8EBC2575222E12B600971CBD /* BCDrawLocalStorageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EBC2574222E12B600971CBD /* BCDrawLocalStorageView.m */; };
 		8EBC2578222E12E500971CBD /* BCLocalStorageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EBC2577222E12E500971CBD /* BCLocalStorageVC.m */; };
 		8EBC2581222E226A00971CBD /* UIColor+RectExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EBC2580222E226A00971CBD /* UIColor+RectExtension.m */; };
@@ -89,6 +99,26 @@
 		8E52D0DD21E0AA5300E8BD9C /* HWGuidePageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWGuidePageManager.h; sourceTree = "<group>"; };
 		8E52D0E021E0AAC500E8BD9C /* ly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ly.png; sourceTree = "<group>"; };
 		8E52D0E121E0AAC500E8BD9C /* hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hi.png; sourceTree = "<group>"; };
+		8EB93CF0222F5BE1005FAF7B /* BCNewGuidePageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCNewGuidePageManager.h; sourceTree = "<group>"; };
+		8EB93CF1222F5BE1005FAF7B /* BCNewGuidePageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCNewGuidePageManager.m; sourceTree = "<group>"; };
+		8EB93CF4222F5D6B005FAF7B /* WztUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WztUtils.h; sourceTree = "<group>"; };
+		8EB93CF5222F5D6B005FAF7B /* WztUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WztUtils.m; sourceTree = "<group>"; };
+		8EB93CF7222F5F39005FAF7B /* UIViewController+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Extension.h"; sourceTree = "<group>"; };
+		8EB93CF8222F5F39005FAF7B /* UIViewController+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Extension.m"; sourceTree = "<group>"; };
+		8EB93CFA222F5FB8005FAF7B /* YFWeakRef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFWeakRef.m; sourceTree = "<group>"; };
+		8EB93CFB222F5FB8005FAF7B /* YFWeakRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFWeakRef.h; sourceTree = "<group>"; };
+		8EB93CFD222F6109005FAF7B /* IProUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IProUtil.h; sourceTree = "<group>"; };
+		8EB93CFE222F6109005FAF7B /* IProUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IProUtil.m; sourceTree = "<group>"; };
+		8EB93D00222F6210005FAF7B /* WTGuidePage1VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTGuidePage1VC.h; sourceTree = "<group>"; };
+		8EB93D01222F6210005FAF7B /* WTGuidePage1VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTGuidePage1VC.m; sourceTree = "<group>"; };
+		8EB93D03222F621F005FAF7B /* WTGuidePage2VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTGuidePage2VC.h; sourceTree = "<group>"; };
+		8EB93D04222F621F005FAF7B /* WTGuidePage2VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTGuidePage2VC.m; sourceTree = "<group>"; };
+		8EB93D06222F622F005FAF7B /* WTGuidePage3VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTGuidePage3VC.h; sourceTree = "<group>"; };
+		8EB93D07222F622F005FAF7B /* WTGuidePage3VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTGuidePage3VC.m; sourceTree = "<group>"; };
+		8EB93D09222F623D005FAF7B /* WTGuidePage4VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTGuidePage4VC.h; sourceTree = "<group>"; };
+		8EB93D0A222F623D005FAF7B /* WTGuidePage4VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTGuidePage4VC.m; sourceTree = "<group>"; };
+		8EB93D0C222F6248005FAF7B /* WTGuidePage5VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTGuidePage5VC.h; sourceTree = "<group>"; };
+		8EB93D0D222F6248005FAF7B /* WTGuidePage5VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTGuidePage5VC.m; sourceTree = "<group>"; };
 		8EBC2573222E12B600971CBD /* BCDrawLocalStorageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCDrawLocalStorageView.h; sourceTree = "<group>"; };
 		8EBC2574222E12B600971CBD /* BCDrawLocalStorageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCDrawLocalStorageView.m; sourceTree = "<group>"; };
 		8EBC2576222E12E500971CBD /* BCLocalStorageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLocalStorageVC.h; sourceTree = "<group>"; };
@@ -211,6 +241,8 @@
 		8E52D0C721E0591500E8BD9C /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				8EB93CF3222F5D50005FAF7B /* Utils */,
+				8EB93CEF222F5AFE005FAF7B /* NewUserGuide */,
 				8EBC2572222E129500971CBD /* DrawLocalStorage */,
 				8E375893222D113500E6CBFB /* SpecialCharactersEncode */,
 				8ECCAA6B221184D300A25A0F /* RefreshButton */,
@@ -236,6 +268,10 @@
 			children = (
 				8E52D0D021E07DD100E8BD9C /* UIImage+Extention.h */,
 				8E52D0D121E07DD100E8BD9C /* UIImage+Extention.m */,
+				8EB93CF7222F5F39005FAF7B /* UIViewController+Extension.h */,
+				8EB93CF8222F5F39005FAF7B /* UIViewController+Extension.m */,
+				8EB93CFB222F5FB8005FAF7B /* YFWeakRef.h */,
+				8EB93CFA222F5FB8005FAF7B /* YFWeakRef.m */,
 			);
 			path = category;
 			sourceTree = "<group>";
@@ -259,6 +295,36 @@
 				8E52D0E021E0AAC500E8BD9C /* ly.png */,
 			);
 			path = images;
+			sourceTree = "<group>";
+		};
+		8EB93CEF222F5AFE005FAF7B /* NewUserGuide */ = {
+			isa = PBXGroup;
+			children = (
+				8EB93CF0222F5BE1005FAF7B /* BCNewGuidePageManager.h */,
+				8EB93CF1222F5BE1005FAF7B /* BCNewGuidePageManager.m */,
+				8EB93D00222F6210005FAF7B /* WTGuidePage1VC.h */,
+				8EB93D01222F6210005FAF7B /* WTGuidePage1VC.m */,
+				8EB93D03222F621F005FAF7B /* WTGuidePage2VC.h */,
+				8EB93D04222F621F005FAF7B /* WTGuidePage2VC.m */,
+				8EB93D06222F622F005FAF7B /* WTGuidePage3VC.h */,
+				8EB93D07222F622F005FAF7B /* WTGuidePage3VC.m */,
+				8EB93D09222F623D005FAF7B /* WTGuidePage4VC.h */,
+				8EB93D0A222F623D005FAF7B /* WTGuidePage4VC.m */,
+				8EB93D0C222F6248005FAF7B /* WTGuidePage5VC.h */,
+				8EB93D0D222F6248005FAF7B /* WTGuidePage5VC.m */,
+			);
+			path = NewUserGuide;
+			sourceTree = "<group>";
+		};
+		8EB93CF3222F5D50005FAF7B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8EB93CFD222F6109005FAF7B /* IProUtil.h */,
+				8EB93CFE222F6109005FAF7B /* IProUtil.m */,
+				8EB93CF4222F5D6B005FAF7B /* WztUtils.h */,
+				8EB93CF5222F5D6B005FAF7B /* WztUtils.m */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		8EBC2572222E129500971CBD /* DrawLocalStorage */ = {
@@ -481,19 +547,29 @@
 				8ECCAA712211857C00A25A0F /* WTRefreshBtnVC.m in Sources */,
 				8E52D0DB21E0AA3D00E8BD9C /* WTMaskGuideVC.m in Sources */,
 				8E52D0D221E07DD100E8BD9C /* UIImage+Extention.m in Sources */,
+				8EB93CF2222F5BE1005FAF7B /* BCNewGuidePageManager.m in Sources */,
 				8E52D0CE21E05E6100E8BD9C /* WTWebViewVC.m in Sources */,
+				8EB93D0E222F6248005FAF7B /* WTGuidePage5VC.m in Sources */,
+				8EB93D08222F622F005FAF7B /* WTGuidePage3VC.m in Sources */,
+				8EB93D0B222F623D005FAF7B /* WTGuidePage4VC.m in Sources */,
 				8EBC2581222E226A00971CBD /* UIColor+RectExtension.m in Sources */,
 				8EBC2584222E493900971CBD /* TestDrawView.m in Sources */,
 				8E52D09621E054BA00E8BD9C /* ViewController.m in Sources */,
 				8E375896222D118100E6CBFB /* WztSpecialCharactEncodeVC.m in Sources */,
+				8EB93CF6222F5D6B005FAF7B /* WztUtils.m in Sources */,
 				8E52D0D621E09E8000E8BD9C /* TestVC.m in Sources */,
+				8EB93D02222F6210005FAF7B /* WTGuidePage1VC.m in Sources */,
 				8E52D0A121E054BB00E8BD9C /* main.m in Sources */,
+				8EB93CFF222F6109005FAF7B /* IProUtil.m in Sources */,
 				8EBC2575222E12B600971CBD /* BCDrawLocalStorageView.m in Sources */,
 				8EBC2578222E12E500971CBD /* BCLocalStorageVC.m in Sources */,
+				8EB93CFC222F5FB8005FAF7B /* YFWeakRef.m in Sources */,
 				8E52D09321E054BA00E8BD9C /* AppDelegate.m in Sources */,
 				8E52D0CB21E0594300E8BD9C /* WTRichTextClickVC.m in Sources */,
 				8E52D0DE21E0AA5300E8BD9C /* HWGuidePageManager.m in Sources */,
+				8EB93CF9222F5F39005FAF7B /* UIViewController+Extension.m in Sources */,
 				8ECCAA6E2211855000A25A0F /* BCFLRefreshBtn.m in Sources */,
+				8EB93D05222F621F005FAF7B /* WTGuidePage2VC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

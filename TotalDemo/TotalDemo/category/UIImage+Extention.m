@@ -21,4 +21,10 @@
     return image;
 }
 
+-(instancetype)resizableStretchImg{
+    CGFloat  w=self.size.width*.5;
+    CGFloat h=self.size.height*.5;
+    return [self resizableImageWithCapInsets:(UIEdgeInsets){h,w,h,w} resizingMode:UIImageResizingModeStretch];
+}
+
 @end

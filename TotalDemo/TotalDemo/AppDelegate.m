@@ -21,6 +21,9 @@
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     [self.window setBackgroundColor:[UIColor whiteColor]];
     
+    //iPhoneX 适配
+    [self updateBarHeightToiPhoneX];
+    
     ViewController *vc = [[ViewController alloc]init];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
     self.window.rootViewController = nav;
@@ -30,6 +33,16 @@
     [self.window makeKeyAndVisible];
     
     return YES;
+}
+
+-(void)updateBarHeightToiPhoneX {
+    
+    statusBarHeightMax = 20;
+    toolBarHeightMax = 49;
+    if ([[UIApplication sharedApplication]statusBarFrame].size.height>statusBarHeightMax) {
+        statusBarHeightMax = [[UIApplication sharedApplication]statusBarFrame].size.height;
+        toolBarHeightMax = 49+34;
+    }
 }
 
 - (void)setNavigationBarStyle{
