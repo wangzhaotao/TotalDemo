@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		261DB1912C43C1FA290A72EE /* Pods_TotalDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 855DCEF6320993AD7D585372 /* Pods_TotalDemo.framework */; };
+		8E375896222D118100E6CBFB /* WztSpecialCharactEncodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E375895222D118100E6CBFB /* WztSpecialCharactEncodeVC.m */; };
 		8E52D09321E054BA00E8BD9C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E52D09221E054BA00E8BD9C /* AppDelegate.m */; };
 		8E52D09621E054BA00E8BD9C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E52D09521E054BA00E8BD9C /* ViewController.m */; };
 		8E52D09B21E054BB00E8BD9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E52D09A21E054BB00E8BD9C /* Assets.xcassets */; };
@@ -25,6 +26,10 @@
 		8E52D0DE21E0AA5300E8BD9C /* HWGuidePageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E52D0DC21E0AA5300E8BD9C /* HWGuidePageManager.m */; };
 		8E52D0E221E0AAC500E8BD9C /* ly.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E52D0E021E0AAC500E8BD9C /* ly.png */; };
 		8E52D0E321E0AAC500E8BD9C /* hi.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E52D0E121E0AAC500E8BD9C /* hi.png */; };
+		8EBC2575222E12B600971CBD /* BCDrawLocalStorageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EBC2574222E12B600971CBD /* BCDrawLocalStorageView.m */; };
+		8EBC2578222E12E500971CBD /* BCLocalStorageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EBC2577222E12E500971CBD /* BCLocalStorageVC.m */; };
+		8EBC2581222E226A00971CBD /* UIColor+RectExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EBC2580222E226A00971CBD /* UIColor+RectExtension.m */; };
+		8EBC2584222E493900971CBD /* TestDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EBC2583222E493900971CBD /* TestDrawView.m */; };
 		8ECCAA6E2211855000A25A0F /* BCFLRefreshBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECCAA6D2211855000A25A0F /* BCFLRefreshBtn.m */; };
 		8ECCAA712211857C00A25A0F /* WTRefreshBtnVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECCAA702211857C00A25A0F /* WTRefreshBtnVC.m */; };
 /* End PBXBuildFile section */
@@ -50,6 +55,8 @@
 		3262EF3D513423B366504D57 /* Pods-TotalDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TotalDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TotalDemo/Pods-TotalDemo.release.xcconfig"; sourceTree = "<group>"; };
 		7EAE420404D8DC20A5C5BD45 /* Pods-TotalDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TotalDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TotalDemo/Pods-TotalDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		855DCEF6320993AD7D585372 /* Pods_TotalDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TotalDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E375894222D118100E6CBFB /* WztSpecialCharactEncodeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WztSpecialCharactEncodeVC.h; sourceTree = "<group>"; };
+		8E375895222D118100E6CBFB /* WztSpecialCharactEncodeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WztSpecialCharactEncodeVC.m; sourceTree = "<group>"; };
 		8E52D08E21E054BA00E8BD9C /* TotalDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TotalDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E52D09121E054BA00E8BD9C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8E52D09221E054BA00E8BD9C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -82,6 +89,14 @@
 		8E52D0DD21E0AA5300E8BD9C /* HWGuidePageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWGuidePageManager.h; sourceTree = "<group>"; };
 		8E52D0E021E0AAC500E8BD9C /* ly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ly.png; sourceTree = "<group>"; };
 		8E52D0E121E0AAC500E8BD9C /* hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hi.png; sourceTree = "<group>"; };
+		8EBC2573222E12B600971CBD /* BCDrawLocalStorageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCDrawLocalStorageView.h; sourceTree = "<group>"; };
+		8EBC2574222E12B600971CBD /* BCDrawLocalStorageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCDrawLocalStorageView.m; sourceTree = "<group>"; };
+		8EBC2576222E12E500971CBD /* BCLocalStorageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLocalStorageVC.h; sourceTree = "<group>"; };
+		8EBC2577222E12E500971CBD /* BCLocalStorageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLocalStorageVC.m; sourceTree = "<group>"; };
+		8EBC257F222E226A00971CBD /* UIColor+RectExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RectExtension.h"; sourceTree = "<group>"; };
+		8EBC2580222E226A00971CBD /* UIColor+RectExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RectExtension.m"; sourceTree = "<group>"; };
+		8EBC2582222E493900971CBD /* TestDrawView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestDrawView.h; sourceTree = "<group>"; };
+		8EBC2583222E493900971CBD /* TestDrawView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDrawView.m; sourceTree = "<group>"; };
 		8ECCAA6C2211855000A25A0F /* BCFLRefreshBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCFLRefreshBtn.h; sourceTree = "<group>"; };
 		8ECCAA6D2211855000A25A0F /* BCFLRefreshBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCFLRefreshBtn.m; sourceTree = "<group>"; };
 		8ECCAA6F2211857C00A25A0F /* WTRefreshBtnVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTRefreshBtnVC.h; sourceTree = "<group>"; };
@@ -114,6 +129,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E375893222D113500E6CBFB /* SpecialCharactersEncode */ = {
+			isa = PBXGroup;
+			children = (
+				8E375894222D118100E6CBFB /* WztSpecialCharactEncodeVC.h */,
+				8E375895222D118100E6CBFB /* WztSpecialCharactEncodeVC.m */,
+			);
+			path = SpecialCharactersEncode;
+			sourceTree = "<group>";
+		};
 		8E52D08521E054BA00E8BD9C = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +211,8 @@
 		8E52D0C721E0591500E8BD9C /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				8EBC2572222E129500971CBD /* DrawLocalStorage */,
+				8E375893222D113500E6CBFB /* SpecialCharactersEncode */,
 				8ECCAA6B221184D300A25A0F /* RefreshButton */,
 				8E52D0D821E0AA2300E8BD9C /* MaskGuide */,
 				8E52D0C821E0591E00E8BD9C /* RichTextClick */,
@@ -233,6 +259,21 @@
 				8E52D0E021E0AAC500E8BD9C /* ly.png */,
 			);
 			path = images;
+			sourceTree = "<group>";
+		};
+		8EBC2572222E129500971CBD /* DrawLocalStorage */ = {
+			isa = PBXGroup;
+			children = (
+				8EBC2573222E12B600971CBD /* BCDrawLocalStorageView.h */,
+				8EBC2574222E12B600971CBD /* BCDrawLocalStorageView.m */,
+				8EBC2576222E12E500971CBD /* BCLocalStorageVC.h */,
+				8EBC2577222E12E500971CBD /* BCLocalStorageVC.m */,
+				8EBC2582222E493900971CBD /* TestDrawView.h */,
+				8EBC2583222E493900971CBD /* TestDrawView.m */,
+				8EBC257F222E226A00971CBD /* UIColor+RectExtension.h */,
+				8EBC2580222E226A00971CBD /* UIColor+RectExtension.m */,
+			);
+			path = DrawLocalStorage;
 			sourceTree = "<group>";
 		};
 		8ECCAA6B221184D300A25A0F /* RefreshButton */ = {
@@ -441,9 +482,14 @@
 				8E52D0DB21E0AA3D00E8BD9C /* WTMaskGuideVC.m in Sources */,
 				8E52D0D221E07DD100E8BD9C /* UIImage+Extention.m in Sources */,
 				8E52D0CE21E05E6100E8BD9C /* WTWebViewVC.m in Sources */,
+				8EBC2581222E226A00971CBD /* UIColor+RectExtension.m in Sources */,
+				8EBC2584222E493900971CBD /* TestDrawView.m in Sources */,
 				8E52D09621E054BA00E8BD9C /* ViewController.m in Sources */,
+				8E375896222D118100E6CBFB /* WztSpecialCharactEncodeVC.m in Sources */,
 				8E52D0D621E09E8000E8BD9C /* TestVC.m in Sources */,
 				8E52D0A121E054BB00E8BD9C /* main.m in Sources */,
+				8EBC2575222E12B600971CBD /* BCDrawLocalStorageView.m in Sources */,
+				8EBC2578222E12E500971CBD /* BCLocalStorageVC.m in Sources */,
 				8E52D09321E054BA00E8BD9C /* AppDelegate.m in Sources */,
 				8E52D0CB21E0594300E8BD9C /* WTRichTextClickVC.m in Sources */,
 				8E52D0DE21E0AA5300E8BD9C /* HWGuidePageManager.m in Sources */,

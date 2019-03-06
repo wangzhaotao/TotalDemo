@@ -28,6 +28,22 @@
 			<key>vc</key>
 			<string>WTMaskGuideVC</string>
 		</dict>
+		<dict>
+			<key>vc</key>
+			<string>WztSpecialCharactEncodeVC</string>
+			<key>method</key>
+			<string>clickCellAction:</string>
+			<key>title</key>
+			<string>字符串-特殊字符编解码</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>内存使用情况</string>
+			<key>method</key>
+			<string>clickCellAction:</string>
+			<key>vc</key>
+			<string>BCLocalStorageVC</string>
+		</dict>
 	</array>
 </dict>
 </plist>

@@ -34,6 +34,39 @@
     return btn;
 }
 
++(instancetype)btnWithNormalImg:(UIImage *)normalImg selectImg:(UIImage *)selectImg{
+    BCFLRefreshBtn *btn = [[BCFLRefreshBtn alloc]init];
+    btn.nonNormalImage = normalImg;
+    btn.selectedNormalImage = selectImg;
+    [btn.roll setActivityIndicatorViewStyle:UIActivityIndicatorViewStyleGray];
+    [btn setImage:normalImg forState:UIControlStateNormal];
+    [btn setImage:selectImg forState:UIControlStateSelected];
+    return btn;
+}
+
+-(void)nightRefresh:(BOOL)start{
+    if(start){
+        [self.roll startAnimating];
+        [self setTitle:@"" forState:0];
+        
+        //image
+        [self setImage:nil forState:UIControlStateNormal];
+        [self setImage:nil forState:UIControlStateSelected];
+    }else{
+        [self.roll stopAnimating];
+        
+        //image
+        [self setImage:self.nonNormalImage forState:UIControlStateNormal];
+        [self setImage:self.selectedNormalImage forState:UIControlStateSelected];
+    }
+    [UIView animateWithDuration:0.25 delay:0 options:(UIViewAnimationOptionCurveEaseInOut) animations:^{
+        [self layoutIfNeeded];
+    } completion:nil];
+    
+}
+
+
+
 +(instancetype)btnNonNormalImg:(UIImage*)nonNormalImg nonHighImg:(UIImage*)nonHighImage
              selectedNormalImg:(UIImage*)selecedNormalImg selectedHighImg:(UIImage*)selectedHighImg
                     disableImg:(UIImage*)disableImg {
@@ -75,36 +108,7 @@
 }
 
 
-+(instancetype)btnWithNormalImg:(UIImage *)normalImg selectImg:(UIImage *)selectImg{
-    BCFLRefreshBtn *btn = [[BCFLRefreshBtn alloc]init];
-    btn.nonNormalImage = normalImg;
-    btn.selectedNormalImage = selectImg;
-    [btn.roll setActivityIndicatorViewStyle:UIActivityIndicatorViewStyleGray];
-    [btn setImage:normalImg forState:UIControlStateNormal];
-    [btn setImage:selectImg forState:UIControlStateSelected];
-    return btn;
-}
 
--(void)nightRefresh:(BOOL)start{
-    if(start){
-        [self.roll startAnimating];
-        [self setTitle:@"" forState:0];
-        
-        //image
-        [self setImage:nil forState:UIControlStateNormal];
-        [self setImage:nil forState:UIControlStateSelected];
-    }else{
-        [self.roll stopAnimating];
-    
-        //image
-        [self setImage:self.nonNormalImage forState:UIControlStateNormal];
-        [self setImage:self.selectedNormalImage forState:UIControlStateSelected];
-    }
-    [UIView animateWithDuration:0.25 delay:0 options:(UIViewAnimationOptionCurveEaseInOut) animations:^{
-       [self layoutIfNeeded];
-    } completion:nil];
-    
-}
 
 
 #pragma mark 重写
@@ -129,6 +133,12 @@
 }
 -(void)setHighlighted:(BOOL)highlighted {
     [super setHighlighted:highlighted];
+    if (highlighted) {
+        UIImage *img = [self imageForState:UIControlStateHighlighted];
+        
+    } else {
+        
+    }
 }
 
 
