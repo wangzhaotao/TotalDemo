@@ -44,6 +44,14 @@
 			<key>vc</key>
 			<string>BCLocalStorageVC</string>
 		</dict>
+		<dict>
+			<key>title</key>
+			<string>新手指引Test</string>
+			<key>method</key>
+			<string>toNewGuideAction:</string>
+			<key>vc</key>
+			<string></string>
+		</dict>
 	</array>
 </dict>
 </plist>

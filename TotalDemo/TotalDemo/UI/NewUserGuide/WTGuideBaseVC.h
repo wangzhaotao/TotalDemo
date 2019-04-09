@@ -1,5 +1,5 @@
 //
-//  WTGuidePage4VC.h
+//  WTGuideBaseVC.h
 //  TotalDemo
 //
 //  Created by ocean on 3/6/19.
@@ -7,13 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "WTGuideBaseVC.h"
 
 
 
-@interface WTGuidePage4VC : WTGuideBaseVC
-
--(void)onClick:(UIButton*)sender;
+@interface WTGuideBaseVC : UIViewController
 
 @end
 

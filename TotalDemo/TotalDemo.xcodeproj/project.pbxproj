@@ -36,6 +36,7 @@
 		8EB93D08222F622F005FAF7B /* WTGuidePage3VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB93D07222F622F005FAF7B /* WTGuidePage3VC.m */; };
 		8EB93D0B222F623D005FAF7B /* WTGuidePage4VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB93D0A222F623D005FAF7B /* WTGuidePage4VC.m */; };
 		8EB93D0E222F6248005FAF7B /* WTGuidePage5VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB93D0D222F6248005FAF7B /* WTGuidePage5VC.m */; };
+		8EB93D11222FB03E005FAF7B /* WTGuideBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB93D10222FB03E005FAF7B /* WTGuideBaseVC.m */; };
 		8EBC2575222E12B600971CBD /* BCDrawLocalStorageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EBC2574222E12B600971CBD /* BCDrawLocalStorageView.m */; };
 		8EBC2578222E12E500971CBD /* BCLocalStorageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EBC2577222E12E500971CBD /* BCLocalStorageVC.m */; };
 		8EBC2581222E226A00971CBD /* UIColor+RectExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EBC2580222E226A00971CBD /* UIColor+RectExtension.m */; };
@@ -119,6 +120,8 @@
 		8EB93D0A222F623D005FAF7B /* WTGuidePage4VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTGuidePage4VC.m; sourceTree = "<group>"; };
 		8EB93D0C222F6248005FAF7B /* WTGuidePage5VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTGuidePage5VC.h; sourceTree = "<group>"; };
 		8EB93D0D222F6248005FAF7B /* WTGuidePage5VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTGuidePage5VC.m; sourceTree = "<group>"; };
+		8EB93D0F222FB03E005FAF7B /* WTGuideBaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTGuideBaseVC.h; sourceTree = "<group>"; };
+		8EB93D10222FB03E005FAF7B /* WTGuideBaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTGuideBaseVC.m; sourceTree = "<group>"; };
 		8EBC2573222E12B600971CBD /* BCDrawLocalStorageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCDrawLocalStorageView.h; sourceTree = "<group>"; };
 		8EBC2574222E12B600971CBD /* BCDrawLocalStorageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCDrawLocalStorageView.m; sourceTree = "<group>"; };
 		8EBC2576222E12E500971CBD /* BCLocalStorageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLocalStorageVC.h; sourceTree = "<group>"; };
@@ -302,6 +305,8 @@
 			children = (
 				8EB93CF0222F5BE1005FAF7B /* BCNewGuidePageManager.h */,
 				8EB93CF1222F5BE1005FAF7B /* BCNewGuidePageManager.m */,
+				8EB93D0F222FB03E005FAF7B /* WTGuideBaseVC.h */,
+				8EB93D10222FB03E005FAF7B /* WTGuideBaseVC.m */,
 				8EB93D00222F6210005FAF7B /* WTGuidePage1VC.h */,
 				8EB93D01222F6210005FAF7B /* WTGuidePage1VC.m */,
 				8EB93D03222F621F005FAF7B /* WTGuidePage2VC.h */,
@@ -547,6 +552,7 @@
 				8ECCAA712211857C00A25A0F /* WTRefreshBtnVC.m in Sources */,
 				8E52D0DB21E0AA3D00E8BD9C /* WTMaskGuideVC.m in Sources */,
 				8E52D0D221E07DD100E8BD9C /* UIImage+Extention.m in Sources */,
+				8EB93D11222FB03E005FAF7B /* WTGuideBaseVC.m in Sources */,
 				8EB93CF2222F5BE1005FAF7B /* BCNewGuidePageManager.m in Sources */,
 				8E52D0CE21E05E6100E8BD9C /* WTWebViewVC.m in Sources */,
 				8EB93D0E222F6248005FAF7B /* WTGuidePage5VC.m in Sources */,

@@ -445,7 +445,6 @@ static BCNewGuidePageManager *instance = nil;
     //添加半透明视图
     [self addBackTransLucentView];
     
-    
     //适配
     CGFloat statusBarHeight = iAppDele->statusBarHeightMax;
     CGFloat navBarHeight = statusBarHeight+44;
@@ -604,12 +603,12 @@ static BCNewGuidePageManager *instance = nil;
     //删除遮障层
     [self destroyInstance];
     //pop
-    if ([UIViewController.curVC isKindOfClass:NSClassFromString(@"BCDeviceArmedSettingVC")]) {
+    if ([UIViewController.curVC isKindOfClass:[WTGuidePage5VC class]]) {
         NSMutableArray *controlsArray = [NSMutableArray arrayWithArray:UIViewController.curVC.navigationController.viewControllers];
         [controlsArray enumerateObjectsWithOptions:NSEnumerationReverse usingBlock:^(id obj, NSUInteger idx, BOOL * _Nonnull stop) {
-
-            if ([obj isKindOfClass:NSClassFromString(@"BCSecuritySettingsVC")] ||
-                [obj isKindOfClass:NSClassFromString(@"BCModeVC")]) {
+            if ([obj isKindOfClass:NSClassFromString(@"WTGuidePage4VC")] ||
+                [obj isKindOfClass:NSClassFromString(@"WTGuidePage3VC")] ||
+                [obj isKindOfClass:NSClassFromString(@"WTGuidePage2VC")]) {
                 [controlsArray removeObject:obj];
             }
         }];
@@ -617,7 +616,17 @@ static BCNewGuidePageManager *instance = nil;
         
         [UIViewController popVC];
     }else{
-        [UIViewController.curVC.navigationController popToRootViewControllerAnimated:YES];
+        NSArray *vcs = UIViewController.curVC.navigationController.viewControllers;
+        UIViewController *vc = nil;
+        for (UIViewController *c in vcs) {
+            if ([NSStringFromClass([c class]) isEqualToString:@"WTGuidePage1VC"]) {
+                vc = c;
+                break;
+            }
+        }
+        if (vc) {
+            [UIViewController.curVC.navigationController popToViewController:vc animated:YES];
+        }
     }
     runOnMain(^{
         //iAppDele.mainVC.tabVC.selectedIndex=0;
@@ -628,8 +637,10 @@ static BCNewGuidePageManager *instance = nil;
 -(void)tapGestureAction:(UIGestureRecognizer*)gesture {
     
     _type++;
+    _backTranslucentView.userInteractionEnabled = NO;
     if (_type>=GuidePageType_End) {
         [self destroyInstance];
+        //[BCNewGuidePageManager saveNewUserFirstToAddDevice:NO];
         [self performSelector:@selector(popToDeviceMainView) withObject:nil afterDelay:0.25];
         return;
     }
@@ -642,30 +653,42 @@ static BCNewGuidePageManager *instance = nil;
     if (_type == GuidePageType_Device) {
         
         [self showDeviceGuideWithFrame:CGRectZero];
+        if ([UIViewController.curVC isKindOfClass:NSClassFromString(@"WTGuidePage3VC")]) {
+            WTGuidePage3VC *vc = (WTGuidePage3VC*)UIViewController.curVC;
+            [vc onClick:nil];
+        }
         
     }else if (_type == GuidePageType_Event) {
         
         //iAppDele.mainVC.tabVC.selectedIndex=1;
+        if ([UIViewController.curVC isKindOfClass:NSClassFromString(@"WTGuidePage1VC")]) {
+            WTGuidePage1VC *vc = (WTGuidePage1VC*)UIViewController.curVC;
+            [vc onClick:nil];
+        }
         
     }else if (_type == GuidePageType_Mode) {
         
-        [self removeAllMask];
+        //[self removeAllMask];
         //iAppDele.mainVC.tabVC.selectedIndex=2;
+        if ([UIViewController.curVC isKindOfClass:NSClassFromString(@"WTGuidePage2VC")]) {
+            WTGuidePage2VC *vc = (WTGuidePage2VC*)UIViewController.curVC;
+            [vc onClick:nil];
+        }
         
     }else if (_type == GuidePageType_ModeSetting1) {
         
-        [self removeAllMask];
-//        if ([UIViewController.curVC isKindOfClass:[BCModeVC class]]) {
-//            BCModeVC *modeVC = (BCModeVC*)UIViewController.curVC;
-//            [modeVC clickAt:[NSIndexPath indexPathForRow:0 inSection:0]];
-//        }
+        //[self removeAllMask];
+        if ([UIViewController.curVC isKindOfClass:NSClassFromString(@"WTGuidePage3VC")]) {
+            WTGuidePage3VC *vc = (WTGuidePage3VC*)UIViewController.curVC;
+            [vc onClick:nil];
+        }
         
     }else if (_type == GuidePageType_ModeSetting2) {
         
-//        if ([UIViewController.curVC isKindOfClass:[BCSecuritySettingsVC class]]) {
-//            BCSecuritySettingsVC *vc = (BCSecuritySettingsVC*)UIViewController.curVC;
-//            [vc clickAtIdxPath:[NSIndexPath indexPathForRow:0 inSection:0]];
-//        }
+        if ([UIViewController.curVC isKindOfClass:NSClassFromString(@"WTGuidePage4VC")]) {
+            WTGuidePage4VC *vc = (WTGuidePage4VC*)UIViewController.curVC;
+            [vc onClick:nil];
+        }
     }
 }
 

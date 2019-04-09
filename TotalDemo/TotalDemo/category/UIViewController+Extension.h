@@ -15,6 +15,7 @@
 
 +(void)popVC;
 
++(void)setVC:(UIViewController *)vc;
 +(instancetype)curVC;
 
 -(void)alert:(NSString *)title msg:(NSString *)msg;

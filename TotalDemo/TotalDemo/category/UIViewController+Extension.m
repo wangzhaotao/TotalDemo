@@ -23,6 +23,11 @@
     });
 }
 
++(void)setVC:(UIViewController *)vc{
+    YFWeakRef *ref = [YFWeakRef refWith:vc];
+    objc_setAssociatedObject(mainApp(), iVCKey, ref, OBJC_ASSOCIATION_RETAIN);
+}
+
 +(instancetype)curVC{
     return  ((YFWeakRef*)(objc_getAssociatedObject(mainApp(), iVCKey))).obj;
 }

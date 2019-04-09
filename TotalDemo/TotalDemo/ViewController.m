@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "WTGuidePage1VC.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -61,6 +61,12 @@
         UIViewController *controller = [NSClassFromString(vcName) new];
         [self.navigationController pushViewController:controller animated:YES];
     }
+}
+-(void)toNewGuideAction:(NSIndexPath*)idxPath {
+    
+    [BCNewGuidePageManager saveNewUserFirstToAddDevice:YES];
+    WTGuidePage1VC *vc = [WTGuidePage1VC new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 

@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WTGuideBaseVC.h"
 
-NS_ASSUME_NONNULL_BEGIN
 
-@interface WTGuidePage3VC : UIViewController
+
+@interface WTGuidePage3VC : WTGuideBaseVC
+
+-(void)onClick:(UIButton*)sender;
 
 @end
 
-NS_ASSUME_NONNULL_END
+
