@@ -6,6 +6,22 @@
 	<array>
 		<dict>
 			<key>title</key>
+			<string>查找函数调用栈</string>
+			<key>method</key>
+			<string>clickCellAction:</string>
+			<key>vc</key>
+			<string>WTThreadLogVC</string>
+		</dict>
+		<dict>
+			<key>vc</key>
+			<string>TestVC</string>
+			<key>method</key>
+			<string>clickCellAction:</string>
+			<key>title</key>
+			<string>Test Demo</string>
+		</dict>
+		<dict>
+			<key>title</key>
 			<string>刷新按钮</string>
 			<key>method</key>
 			<string>clickCellAction:</string>
