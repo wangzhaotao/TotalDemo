@@ -6,6 +6,14 @@
 	<array>
 		<dict>
 			<key>title</key>
+			<string>崩溃日志信息收集</string>
+			<key>method</key>
+			<string>clickCellAction:</string>
+			<key>vc</key>
+			<string>WTCrashExceptionVC</string>
+		</dict>
+		<dict>
+			<key>title</key>
 			<string>查找函数调用栈</string>
 			<key>method</key>
 			<string>clickCellAction:</string>

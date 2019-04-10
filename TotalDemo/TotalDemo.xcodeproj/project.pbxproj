@@ -27,6 +27,8 @@
 		8E52D0DE21E0AA5300E8BD9C /* HWGuidePageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E52D0DC21E0AA5300E8BD9C /* HWGuidePageManager.m */; };
 		8E52D0E221E0AAC500E8BD9C /* ly.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E52D0E021E0AAC500E8BD9C /* ly.png */; };
 		8E52D0E321E0AAC500E8BD9C /* hi.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E52D0E121E0AAC500E8BD9C /* hi.png */; };
+		8E8A3D29225DD0B500713A08 /* WTCrashExpectionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8A3D28225DD0B500713A08 /* WTCrashExpectionHandler.m */; };
+		8E8A3D2C225DD2A400713A08 /* WTCrashExceptionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8A3D2B225DD2A400713A08 /* WTCrashExceptionVC.m */; };
 		8EB93CF2222F5BE1005FAF7B /* BCNewGuidePageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB93CF1222F5BE1005FAF7B /* BCNewGuidePageManager.m */; };
 		8EB93CF6222F5D6B005FAF7B /* WztUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB93CF5222F5D6B005FAF7B /* WztUtils.m */; };
 		8EB93CF9222F5F39005FAF7B /* UIViewController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB93CF8222F5F39005FAF7B /* UIViewController+Extension.m */; };
@@ -104,6 +106,10 @@
 		8E52D0DD21E0AA5300E8BD9C /* HWGuidePageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWGuidePageManager.h; sourceTree = "<group>"; };
 		8E52D0E021E0AAC500E8BD9C /* ly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ly.png; sourceTree = "<group>"; };
 		8E52D0E121E0AAC500E8BD9C /* hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hi.png; sourceTree = "<group>"; };
+		8E8A3D27225DD0B500713A08 /* WTCrashExpectionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTCrashExpectionHandler.h; sourceTree = "<group>"; };
+		8E8A3D28225DD0B500713A08 /* WTCrashExpectionHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTCrashExpectionHandler.m; sourceTree = "<group>"; };
+		8E8A3D2A225DD2A400713A08 /* WTCrashExceptionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTCrashExceptionVC.h; sourceTree = "<group>"; };
+		8E8A3D2B225DD2A400713A08 /* WTCrashExceptionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTCrashExceptionVC.m; sourceTree = "<group>"; };
 		8EB93CF0222F5BE1005FAF7B /* BCNewGuidePageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCNewGuidePageManager.h; sourceTree = "<group>"; };
 		8EB93CF1222F5BE1005FAF7B /* BCNewGuidePageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCNewGuidePageManager.m; sourceTree = "<group>"; };
 		8EB93CF4222F5D6B005FAF7B /* WztUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WztUtils.h; sourceTree = "<group>"; };
@@ -258,6 +264,7 @@
 		8E52D0C721E0591500E8BD9C /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				8E8A3D26225DD07B00713A08 /* CrashExpectionHandler */,
 				8E357F8F225CC56100D55C31 /* BSBacktraceLogger */,
 				8EB93CF3222F5D50005FAF7B /* Utils */,
 				8EB93CEF222F5AFE005FAF7B /* NewUserGuide */,
@@ -313,6 +320,17 @@
 				8E52D0E021E0AAC500E8BD9C /* ly.png */,
 			);
 			path = images;
+			sourceTree = "<group>";
+		};
+		8E8A3D26225DD07B00713A08 /* CrashExpectionHandler */ = {
+			isa = PBXGroup;
+			children = (
+				8E8A3D27225DD0B500713A08 /* WTCrashExpectionHandler.h */,
+				8E8A3D28225DD0B500713A08 /* WTCrashExpectionHandler.m */,
+				8E8A3D2A225DD2A400713A08 /* WTCrashExceptionVC.h */,
+				8E8A3D2B225DD2A400713A08 /* WTCrashExceptionVC.m */,
+			);
+			path = CrashExpectionHandler;
 			sourceTree = "<group>";
 		};
 		8EB93CEF222F5AFE005FAF7B /* NewUserGuide */ = {
@@ -568,6 +586,7 @@
 				8E52D0D221E07DD100E8BD9C /* UIImage+Extention.m in Sources */,
 				8EB93D11222FB03E005FAF7B /* WTGuideBaseVC.m in Sources */,
 				8EB93CF2222F5BE1005FAF7B /* BCNewGuidePageManager.m in Sources */,
+				8E8A3D29225DD0B500713A08 /* WTCrashExpectionHandler.m in Sources */,
 				8E52D0CE21E05E6100E8BD9C /* WTWebViewVC.m in Sources */,
 				8EB93D0E222F6248005FAF7B /* WTGuidePage5VC.m in Sources */,
 				8EB93D08222F622F005FAF7B /* WTGuidePage3VC.m in Sources */,
@@ -590,6 +609,7 @@
 				8E52D0DE21E0AA5300E8BD9C /* HWGuidePageManager.m in Sources */,
 				8E357F95225CC59900D55C31 /* WTThreadLogVC.m in Sources */,
 				8EB93CF9222F5F39005FAF7B /* UIViewController+Extension.m in Sources */,
+				8E8A3D2C225DD2A400713A08 /* WTCrashExceptionVC.m in Sources */,
 				8ECCAA6E2211855000A25A0F /* BCFLRefreshBtn.m in Sources */,
 				8EB93D05222F621F005FAF7B /* WTGuidePage2VC.m in Sources */,
 			);

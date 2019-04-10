@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "WTCrashExpectionHandler.h"
 
 @interface AppDelegate ()
 
@@ -31,6 +32,9 @@
     [self setNavigationBarStyle];
     
     [self.window makeKeyAndVisible];
+    
+    //注册崩溃信息收集
+    [WTCrashExpectionHandler RegisterSignalHandler];
     
     return YES;
 }
