@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		261DB1912C43C1FA290A72EE /* Pods_TotalDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 855DCEF6320993AD7D585372 /* Pods_TotalDemo.framework */; };
+		8E0C938E2266BD1000E38C50 /* WTOperationCancelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0C938D2266BD1000E38C50 /* WTOperationCancelVC.m */; };
 		8E357F92225CC56F00D55C31 /* BSBacktraceLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E357F90225CC56F00D55C31 /* BSBacktraceLogger.m */; };
 		8E357F95225CC59900D55C31 /* WTThreadLogVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E357F94225CC59900D55C31 /* WTThreadLogVC.m */; };
 		8E375896222D118100E6CBFB /* WztSpecialCharactEncodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E375895222D118100E6CBFB /* WztSpecialCharactEncodeVC.m */; };
@@ -29,6 +30,7 @@
 		8E52D0E321E0AAC500E8BD9C /* hi.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E52D0E121E0AAC500E8BD9C /* hi.png */; };
 		8E8A3D29225DD0B500713A08 /* WTCrashExpectionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8A3D28225DD0B500713A08 /* WTCrashExpectionHandler.m */; };
 		8E8A3D2C225DD2A400713A08 /* WTCrashExceptionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8A3D2B225DD2A400713A08 /* WTCrashExceptionVC.m */; };
+		8EA04C0F227005E60004E0F2 /* WTCoreImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA04C0E227005E60004E0F2 /* WTCoreImageVC.m */; };
 		8EB93CF2222F5BE1005FAF7B /* BCNewGuidePageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB93CF1222F5BE1005FAF7B /* BCNewGuidePageManager.m */; };
 		8EB93CF6222F5D6B005FAF7B /* WztUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB93CF5222F5D6B005FAF7B /* WztUtils.m */; };
 		8EB93CF9222F5F39005FAF7B /* UIViewController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB93CF8222F5F39005FAF7B /* UIViewController+Extension.m */; };
@@ -69,6 +71,8 @@
 		3262EF3D513423B366504D57 /* Pods-TotalDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TotalDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TotalDemo/Pods-TotalDemo.release.xcconfig"; sourceTree = "<group>"; };
 		7EAE420404D8DC20A5C5BD45 /* Pods-TotalDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TotalDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TotalDemo/Pods-TotalDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		855DCEF6320993AD7D585372 /* Pods_TotalDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TotalDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E0C938C2266BD1000E38C50 /* WTOperationCancelVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTOperationCancelVC.h; sourceTree = "<group>"; };
+		8E0C938D2266BD1000E38C50 /* WTOperationCancelVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTOperationCancelVC.m; sourceTree = "<group>"; };
 		8E357F90225CC56F00D55C31 /* BSBacktraceLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSBacktraceLogger.m; sourceTree = "<group>"; };
 		8E357F91225CC56F00D55C31 /* BSBacktraceLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSBacktraceLogger.h; sourceTree = "<group>"; };
 		8E357F93225CC59900D55C31 /* WTThreadLogVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTThreadLogVC.h; sourceTree = "<group>"; };
@@ -110,6 +114,8 @@
 		8E8A3D28225DD0B500713A08 /* WTCrashExpectionHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTCrashExpectionHandler.m; sourceTree = "<group>"; };
 		8E8A3D2A225DD2A400713A08 /* WTCrashExceptionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTCrashExceptionVC.h; sourceTree = "<group>"; };
 		8E8A3D2B225DD2A400713A08 /* WTCrashExceptionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTCrashExceptionVC.m; sourceTree = "<group>"; };
+		8EA04C0D227005E60004E0F2 /* WTCoreImageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTCoreImageVC.h; sourceTree = "<group>"; };
+		8EA04C0E227005E60004E0F2 /* WTCoreImageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTCoreImageVC.m; sourceTree = "<group>"; };
 		8EB93CF0222F5BE1005FAF7B /* BCNewGuidePageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCNewGuidePageManager.h; sourceTree = "<group>"; };
 		8EB93CF1222F5BE1005FAF7B /* BCNewGuidePageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCNewGuidePageManager.m; sourceTree = "<group>"; };
 		8EB93CF4222F5D6B005FAF7B /* WztUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WztUtils.h; sourceTree = "<group>"; };
@@ -172,6 +178,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E0C938B2266BCE400E38C50 /* OperationCancel */ = {
+			isa = PBXGroup;
+			children = (
+				8E0C938C2266BD1000E38C50 /* WTOperationCancelVC.h */,
+				8E0C938D2266BD1000E38C50 /* WTOperationCancelVC.m */,
+			);
+			path = OperationCancel;
+			sourceTree = "<group>";
+		};
 		8E357F8F225CC56100D55C31 /* BSBacktraceLogger */ = {
 			isa = PBXGroup;
 			children = (
@@ -264,6 +279,8 @@
 		8E52D0C721E0591500E8BD9C /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				8EA04C0C227005150004E0F2 /* CoreImage */,
+				8E0C938B2266BCE400E38C50 /* OperationCancel */,
 				8E8A3D26225DD07B00713A08 /* CrashExpectionHandler */,
 				8E357F8F225CC56100D55C31 /* BSBacktraceLogger */,
 				8EB93CF3222F5D50005FAF7B /* Utils */,
@@ -331,6 +348,15 @@
 				8E8A3D2B225DD2A400713A08 /* WTCrashExceptionVC.m */,
 			);
 			path = CrashExpectionHandler;
+			sourceTree = "<group>";
+		};
+		8EA04C0C227005150004E0F2 /* CoreImage */ = {
+			isa = PBXGroup;
+			children = (
+				8EA04C0D227005E60004E0F2 /* WTCoreImageVC.h */,
+				8EA04C0E227005E60004E0F2 /* WTCoreImageVC.m */,
+			);
+			path = CoreImage;
 			sourceTree = "<group>";
 		};
 		8EB93CEF222F5AFE005FAF7B /* NewUserGuide */ = {
@@ -583,6 +609,7 @@
 			files = (
 				8ECCAA712211857C00A25A0F /* WTRefreshBtnVC.m in Sources */,
 				8E52D0DB21E0AA3D00E8BD9C /* WTMaskGuideVC.m in Sources */,
+				8EA04C0F227005E60004E0F2 /* WTCoreImageVC.m in Sources */,
 				8E52D0D221E07DD100E8BD9C /* UIImage+Extention.m in Sources */,
 				8EB93D11222FB03E005FAF7B /* WTGuideBaseVC.m in Sources */,
 				8EB93CF2222F5BE1005FAF7B /* BCNewGuidePageManager.m in Sources */,
@@ -592,6 +619,7 @@
 				8EB93D08222F622F005FAF7B /* WTGuidePage3VC.m in Sources */,
 				8EB93D0B222F623D005FAF7B /* WTGuidePage4VC.m in Sources */,
 				8EBC2581222E226A00971CBD /* UIColor+RectExtension.m in Sources */,
+				8E0C938E2266BD1000E38C50 /* WTOperationCancelVC.m in Sources */,
 				8EBC2584222E493900971CBD /* TestDrawView.m in Sources */,
 				8E52D09621E054BA00E8BD9C /* ViewController.m in Sources */,
 				8E375896222D118100E6CBFB /* WztSpecialCharactEncodeVC.m in Sources */,
