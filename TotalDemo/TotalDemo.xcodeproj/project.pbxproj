@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		261DB1912C43C1FA290A72EE /* Pods_TotalDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 855DCEF6320993AD7D585372 /* Pods_TotalDemo.framework */; };
 		8E0C938E2266BD1000E38C50 /* WTOperationCancelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0C938D2266BD1000E38C50 /* WTOperationCancelVC.m */; };
+		8E1F7D942294093000F51D1A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E1F7D932294093000F51D1A /* GoogleService-Info.plist */; };
 		8E357F92225CC56F00D55C31 /* BSBacktraceLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E357F90225CC56F00D55C31 /* BSBacktraceLogger.m */; };
 		8E357F95225CC59900D55C31 /* WTThreadLogVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E357F94225CC59900D55C31 /* WTThreadLogVC.m */; };
 		8E375896222D118100E6CBFB /* WztSpecialCharactEncodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E375895222D118100E6CBFB /* WztSpecialCharactEncodeVC.m */; };
@@ -73,6 +74,7 @@
 		855DCEF6320993AD7D585372 /* Pods_TotalDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TotalDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E0C938C2266BD1000E38C50 /* WTOperationCancelVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTOperationCancelVC.h; sourceTree = "<group>"; };
 		8E0C938D2266BD1000E38C50 /* WTOperationCancelVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTOperationCancelVC.m; sourceTree = "<group>"; };
+		8E1F7D932294093000F51D1A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8E357F90225CC56F00D55C31 /* BSBacktraceLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSBacktraceLogger.m; sourceTree = "<group>"; };
 		8E357F91225CC56F00D55C31 /* BSBacktraceLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSBacktraceLogger.h; sourceTree = "<group>"; };
 		8E357F93225CC59900D55C31 /* WTThreadLogVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTThreadLogVC.h; sourceTree = "<group>"; };
@@ -187,6 +189,14 @@
 			path = OperationCancel;
 			sourceTree = "<group>";
 		};
+		8E1F7D922294092800F51D1A /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				8E1F7D932294093000F51D1A /* GoogleService-Info.plist */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
 		8E357F8F225CC56100D55C31 /* BSBacktraceLogger */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +249,7 @@
 				8E52D0D321E09E8000E8BD9C /* TestVC.h */,
 				8E52D0D421E09E8000E8BD9C /* TestVC.m */,
 				8E52D09F21E054BB00E8BD9C /* Info.plist */,
+				8E1F7D922294092800F51D1A /* libs */,
 				8E52D0CF21E07DA600E8BD9C /* category */,
 				8E52D0C721E0591500E8BD9C /* UI */,
 				8E52D0C321E0560900E8BD9C /* supports */,
@@ -540,6 +551,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E52D0E321E0AAC500E8BD9C /* hi.png in Resources */,
+				8E1F7D942294093000F51D1A /* GoogleService-Info.plist in Resources */,
 				8E52D0E221E0AAC500E8BD9C /* ly.png in Resources */,
 				8E52D09E21E054BB00E8BD9C /* LaunchScreen.storyboard in Resources */,
 				8E52D0C621E058E600E8BD9C /* main.plist in Resources */,
@@ -571,10 +583,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TotalDemo/Pods-TotalDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -845,6 +859,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RNS9QEVKGH;
 				INFOPLIST_FILE = TotalDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -863,6 +878,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RNS9QEVKGH;
 				INFOPLIST_FILE = TotalDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -880,6 +896,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RNS9QEVKGH;
 				INFOPLIST_FILE = TotalDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -897,6 +914,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RNS9QEVKGH;
 				INFOPLIST_FILE = TotalDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

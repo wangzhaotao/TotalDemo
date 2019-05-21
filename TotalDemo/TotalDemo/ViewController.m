@@ -21,10 +21,17 @@
     [super viewDidLoad];
     //
     self.title = @"Hello world";
-    //
+    
+//    dispatch_sync(dispatch_get_main_queue(), ^{
+//        NSLog(@"这回是一个死锁吗？？？");
+//    });
+    
+    //UDID 141171e0e0713c041c8884811742b96869939639
     [self initData];
     
     [self regexSearchString];
+    
+    [self.view addSubview:nil];
 }
 
 //正则匹配查找
