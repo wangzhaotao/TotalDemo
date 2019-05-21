@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "WTCrashExpectionHandler.h"
+#import "WTFirebaseManager.h"
 
 @interface AppDelegate ()
 
@@ -21,6 +22,10 @@
     //
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     [self.window setBackgroundColor:[UIColor whiteColor]];
+    
+    //Firebase远程配置
+    [WTFirebaseManager configure];
+    [[WTFirebaseManager share]fetchConfig];
     
     //iPhoneX 适配
     [self updateBarHeightToiPhoneX];

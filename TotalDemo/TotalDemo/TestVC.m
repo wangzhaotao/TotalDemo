@@ -7,6 +7,7 @@
 //
 
 #import "TestVC.h"
+#import "WTFirebaseManager.h"
 
 #define Video_FPS 15
 
@@ -23,11 +24,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [[WTFirebaseManager share]mainBackgroundColor];
     //
+    
+    
     
     _videoThread = [[NSThread alloc]initWithTarget:self selector:@selector(videoThreadAction) object:nil];
     [_videoThread start];
+}
+
+-(void)viewDidDisappear:(BOOL)animated {
+    
+    [self destroy];
+    
+    [super viewDidDisappear:animated];
 }
 
 -(void)testZhiZhenLog {

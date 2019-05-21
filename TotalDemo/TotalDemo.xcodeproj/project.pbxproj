@@ -10,6 +10,9 @@
 		261DB1912C43C1FA290A72EE /* Pods_TotalDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 855DCEF6320993AD7D585372 /* Pods_TotalDemo.framework */; };
 		8E0C938E2266BD1000E38C50 /* WTOperationCancelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0C938D2266BD1000E38C50 /* WTOperationCancelVC.m */; };
 		8E1F7D942294093000F51D1A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E1F7D932294093000F51D1A /* GoogleService-Info.plist */; };
+		8E1F7D9822940A3E00F51D1A /* WTFirebaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1F7D9722940A3E00F51D1A /* WTFirebaseManager.m */; };
+		8E1F7D9B22941E6000F51D1A /* UIColor+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1F7D9A22941E6000F51D1A /* UIColor+Ext.m */; };
+		8E1F7D9D229421C500F51D1A /* RemoteConfigDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E1F7D9C229421C500F51D1A /* RemoteConfigDefaults.plist */; };
 		8E357F92225CC56F00D55C31 /* BSBacktraceLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E357F90225CC56F00D55C31 /* BSBacktraceLogger.m */; };
 		8E357F95225CC59900D55C31 /* WTThreadLogVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E357F94225CC59900D55C31 /* WTThreadLogVC.m */; };
 		8E375896222D118100E6CBFB /* WztSpecialCharactEncodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E375895222D118100E6CBFB /* WztSpecialCharactEncodeVC.m */; };
@@ -75,6 +78,11 @@
 		8E0C938C2266BD1000E38C50 /* WTOperationCancelVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTOperationCancelVC.h; sourceTree = "<group>"; };
 		8E0C938D2266BD1000E38C50 /* WTOperationCancelVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTOperationCancelVC.m; sourceTree = "<group>"; };
 		8E1F7D932294093000F51D1A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8E1F7D9622940A3E00F51D1A /* WTFirebaseManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTFirebaseManager.h; sourceTree = "<group>"; };
+		8E1F7D9722940A3E00F51D1A /* WTFirebaseManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTFirebaseManager.m; sourceTree = "<group>"; };
+		8E1F7D9922941E6000F51D1A /* UIColor+Ext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Ext.h"; sourceTree = "<group>"; };
+		8E1F7D9A22941E6000F51D1A /* UIColor+Ext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Ext.m"; sourceTree = "<group>"; };
+		8E1F7D9C229421C500F51D1A /* RemoteConfigDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RemoteConfigDefaults.plist; sourceTree = "<group>"; };
 		8E357F90225CC56F00D55C31 /* BSBacktraceLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSBacktraceLogger.m; sourceTree = "<group>"; };
 		8E357F91225CC56F00D55C31 /* BSBacktraceLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSBacktraceLogger.h; sourceTree = "<group>"; };
 		8E357F93225CC59900D55C31 /* WTThreadLogVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTThreadLogVC.h; sourceTree = "<group>"; };
@@ -192,9 +200,19 @@
 		8E1F7D922294092800F51D1A /* libs */ = {
 			isa = PBXGroup;
 			children = (
-				8E1F7D932294093000F51D1A /* GoogleService-Info.plist */,
 			);
 			path = libs;
+			sourceTree = "<group>";
+		};
+		8E1F7D9522940A1900F51D1A /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				8E1F7D9622940A3E00F51D1A /* WTFirebaseManager.h */,
+				8E1F7D9722940A3E00F51D1A /* WTFirebaseManager.m */,
+				8E1F7D9C229421C500F51D1A /* RemoteConfigDefaults.plist */,
+				8E1F7D932294093000F51D1A /* GoogleService-Info.plist */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		8E357F8F225CC56100D55C31 /* BSBacktraceLogger */ = {
@@ -249,6 +267,7 @@
 				8E52D0D321E09E8000E8BD9C /* TestVC.h */,
 				8E52D0D421E09E8000E8BD9C /* TestVC.m */,
 				8E52D09F21E054BB00E8BD9C /* Info.plist */,
+				8E1F7D9522940A1900F51D1A /* Tools */,
 				8E1F7D922294092800F51D1A /* libs */,
 				8E52D0CF21E07DA600E8BD9C /* category */,
 				8E52D0C721E0591500E8BD9C /* UI */,
@@ -325,6 +344,8 @@
 				8EB93CF8222F5F39005FAF7B /* UIViewController+Extension.m */,
 				8EB93CFB222F5FB8005FAF7B /* YFWeakRef.h */,
 				8EB93CFA222F5FB8005FAF7B /* YFWeakRef.m */,
+				8E1F7D9922941E6000F51D1A /* UIColor+Ext.h */,
+				8E1F7D9A22941E6000F51D1A /* UIColor+Ext.m */,
 			);
 			path = category;
 			sourceTree = "<group>";
@@ -551,6 +572,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E52D0E321E0AAC500E8BD9C /* hi.png in Resources */,
+				8E1F7D9D229421C500F51D1A /* RemoteConfigDefaults.plist in Resources */,
 				8E1F7D942294093000F51D1A /* GoogleService-Info.plist in Resources */,
 				8E52D0E221E0AAC500E8BD9C /* ly.png in Resources */,
 				8E52D09E21E054BB00E8BD9C /* LaunchScreen.storyboard in Resources */,
@@ -582,18 +604,24 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TotalDemo/Pods-TotalDemo-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-TotalDemo/Pods-TotalDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TotalDemo/Pods-TotalDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TotalDemo/Pods-TotalDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9176CA21F9C4651D1D9F3D2B /* [CP] Check Pods Manifest.lock */ = {
@@ -621,6 +649,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E1F7D9B22941E6000F51D1A /* UIColor+Ext.m in Sources */,
 				8ECCAA712211857C00A25A0F /* WTRefreshBtnVC.m in Sources */,
 				8E52D0DB21E0AA3D00E8BD9C /* WTMaskGuideVC.m in Sources */,
 				8EA04C0F227005E60004E0F2 /* WTCoreImageVC.m in Sources */,
@@ -628,6 +657,7 @@
 				8EB93D11222FB03E005FAF7B /* WTGuideBaseVC.m in Sources */,
 				8EB93CF2222F5BE1005FAF7B /* BCNewGuidePageManager.m in Sources */,
 				8E8A3D29225DD0B500713A08 /* WTCrashExpectionHandler.m in Sources */,
+				8E1F7D9822940A3E00F51D1A /* WTFirebaseManager.m in Sources */,
 				8E52D0CE21E05E6100E8BD9C /* WTWebViewVC.m in Sources */,
 				8EB93D0E222F6248005FAF7B /* WTGuidePage5VC.m in Sources */,
 				8EB93D08222F622F005FAF7B /* WTGuidePage3VC.m in Sources */,
