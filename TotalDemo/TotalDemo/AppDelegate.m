@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "WTCrashExpectionHandler.h"
+#import "WTFirebaseManager.h"
+#import "WTLogManager.h"
 
 @interface AppDelegate ()
 
@@ -21,6 +24,16 @@
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     [self.window setBackgroundColor:[UIColor whiteColor]];
     
+    //Firebase远程配置
+    [WTFirebaseManager configure];
+    [[WTFirebaseManager share]fetchConfig];
+    
+    //日志
+    [[WTLogManager share]initRedirectLogToFile];
+    
+    //iPhoneX 适配
+    [self updateBarHeightToiPhoneX];
+    
     ViewController *vc = [[ViewController alloc]init];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
     self.window.rootViewController = nav;
@@ -29,7 +42,20 @@
     
     [self.window makeKeyAndVisible];
     
+    //注册崩溃信息收集
+    [WTCrashExpectionHandler RegisterSignalHandler];
+    
     return YES;
+}
+
+-(void)updateBarHeightToiPhoneX {
+    
+    statusBarHeightMax = 20;
+    toolBarHeightMax = 49;
+    if ([[UIApplication sharedApplication]statusBarFrame].size.height>statusBarHeightMax) {
+        statusBarHeightMax = [[UIApplication sharedApplication]statusBarFrame].size.height;
+        toolBarHeightMax = 49+34;
+    }
 }
 
 - (void)setNavigationBarStyle{

@@ -6,6 +6,58 @@
 	<array>
 		<dict>
 			<key>title</key>
+			<string>发送App打印日志到指定邮箱</string>
+		</dict>
+		<dict>
+			<key>vc</key>
+			<string>WTCoreImageVC</string>
+			<key>method</key>
+			<string>clickCellAction:</string>
+			<key>title</key>
+			<string>CoreImage图像处理</string>
+		</dict>
+		<dict>
+			<key>vc</key>
+			<string>WTOperationCancelVC</string>
+			<key>method</key>
+			<string>clickCellAction:</string>
+			<key>title</key>
+			<string>多线程-操作取消</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>崩溃日志信息收集</string>
+			<key>method</key>
+			<string>clickCellAction:</string>
+			<key>vc</key>
+			<string>WTCrashExceptionVC</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>查找函数调用栈</string>
+			<key>method</key>
+			<string>clickCellAction:</string>
+			<key>vc</key>
+			<string>WTThreadLogVC</string>
+		</dict>
+		<dict>
+			<key>vc</key>
+			<string>TestVC</string>
+			<key>method</key>
+			<string>clickCellAction:</string>
+			<key>title</key>
+			<string>Test Demo</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>刷新按钮</string>
+			<key>method</key>
+			<string>clickCellAction:</string>
+			<key>vc</key>
+			<string>WTRefreshBtnVC</string>
+		</dict>
+		<dict>
+			<key>title</key>
 			<string>富文本点击事件</string>
 			<key>method</key>
 			<string>clickCellAction:</string>
@@ -19,6 +71,30 @@
 			<string>clickCellAction:</string>
 			<key>vc</key>
 			<string>WTMaskGuideVC</string>
+		</dict>
+		<dict>
+			<key>vc</key>
+			<string>WztSpecialCharactEncodeVC</string>
+			<key>method</key>
+			<string>clickCellAction:</string>
+			<key>title</key>
+			<string>字符串-特殊字符编解码</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>内存使用情况</string>
+			<key>method</key>
+			<string>clickCellAction:</string>
+			<key>vc</key>
+			<string>BCLocalStorageVC</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>新手指引Test</string>
+			<key>method</key>
+			<string>toNewGuideAction:</string>
+			<key>vc</key>
+			<string></string>
 		</dict>
 	</array>
 </dict>

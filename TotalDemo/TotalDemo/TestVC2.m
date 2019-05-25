@@ -11,6 +11,7 @@
 
 @interface TestVC2 ()<TestVCDelegate>
 @property (nonatomic, strong) TestVC *vc;
+@property (nonatomic, copy) NSString *test;
 
 @end
 
@@ -19,6 +20,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     //
+    
+    dispatch_block_t block = dispatch_block_create(0, ^{
+        self.test = @"This is test.";
+        NSLog(@"test: %@", self.test);
+    });
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), block);
+    
+    //    dispatch_sync(dispatch_get_main_queue(), ^{
+    //        NSLog(@"这回是一个死锁吗？？？");
+    //    });
+    
+    //UDID 141171e0e0713c041c8884811742b96869939639
+    //[self.view addSubview:nil];
     
     UIButton *btn = [[UIButton alloc]init];
     [btn setTitle:@"Test Btn" forState:UIControlStateNormal];

@@ -9,6 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
+{
+    @public
+    CGFloat statusBarHeightMax;
+    CGFloat toolBarHeightMax;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 
