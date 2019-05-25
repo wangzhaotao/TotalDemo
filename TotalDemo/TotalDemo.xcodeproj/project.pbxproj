@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		261DB1912C43C1FA290A72EE /* Pods_TotalDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 855DCEF6320993AD7D585372 /* Pods_TotalDemo.framework */; };
+		7B20C984228730260009CF8D /* TestVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B20C982228730260009CF8D /* TestVC2.m */; };
+		7B20C985228730260009CF8D /* TestVC2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B20C983228730260009CF8D /* TestVC2.xib */; };
 		8E52D09321E054BA00E8BD9C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E52D09221E054BA00E8BD9C /* AppDelegate.m */; };
 		8E52D09621E054BA00E8BD9C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E52D09521E054BA00E8BD9C /* ViewController.m */; };
 		8E52D09B21E054BB00E8BD9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E52D09A21E054BB00E8BD9C /* Assets.xcassets */; };
@@ -46,6 +48,9 @@
 
 /* Begin PBXFileReference section */
 		3262EF3D513423B366504D57 /* Pods-TotalDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TotalDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TotalDemo/Pods-TotalDemo.release.xcconfig"; sourceTree = "<group>"; };
+		7B20C981228730260009CF8D /* TestVC2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC2.h; sourceTree = "<group>"; };
+		7B20C982228730260009CF8D /* TestVC2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC2.m; sourceTree = "<group>"; };
+		7B20C983228730260009CF8D /* TestVC2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestVC2.xib; sourceTree = "<group>"; };
 		7EAE420404D8DC20A5C5BD45 /* Pods-TotalDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TotalDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TotalDemo/Pods-TotalDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		855DCEF6320993AD7D585372 /* Pods_TotalDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TotalDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E52D08E21E054BA00E8BD9C /* TotalDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TotalDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +144,9 @@
 				8E52D09521E054BA00E8BD9C /* ViewController.m */,
 				8E52D0D321E09E8000E8BD9C /* TestVC.h */,
 				8E52D0D421E09E8000E8BD9C /* TestVC.m */,
+				7B20C981228730260009CF8D /* TestVC2.h */,
+				7B20C982228730260009CF8D /* TestVC2.m */,
+				7B20C983228730260009CF8D /* TestVC2.xib */,
 				8E52D0D521E09E8000E8BD9C /* TestVC.xib */,
 				8E52D09F21E054BB00E8BD9C /* Info.plist */,
 				8E52D0CF21E07DA600E8BD9C /* category */,
@@ -354,6 +362,7 @@
 				8E52D0E221E0AAC500E8BD9C /* ly.png in Resources */,
 				8E52D0D721E09E8000E8BD9C /* TestVC.xib in Resources */,
 				8E52D09E21E054BB00E8BD9C /* LaunchScreen.storyboard in Resources */,
+				7B20C985228730260009CF8D /* TestVC2.xib in Resources */,
 				8E52D0C621E058E600E8BD9C /* main.plist in Resources */,
 				8E52D09B21E054BB00E8BD9C /* Assets.xcassets in Resources */,
 			);
@@ -424,6 +433,7 @@
 				8E52D0CE21E05E6100E8BD9C /* WTWebViewVC.m in Sources */,
 				8E52D09621E054BA00E8BD9C /* ViewController.m in Sources */,
 				8E52D0D621E09E8000E8BD9C /* TestVC.m in Sources */,
+				7B20C984228730260009CF8D /* TestVC2.m in Sources */,
 				8E52D0A121E054BB00E8BD9C /* main.m in Sources */,
 				8E52D09321E054BA00E8BD9C /* AppDelegate.m in Sources */,
 				8E52D0CB21E0594300E8BD9C /* WTRichTextClickVC.m in Sources */,
@@ -594,6 +604,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = RNS9QEVKGH;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TotalDemo/supports/TotalDemo.pch";

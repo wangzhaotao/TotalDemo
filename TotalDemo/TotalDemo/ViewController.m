@@ -7,11 +7,15 @@
 //
 
 #import "ViewController.h"
+#import "TestVC2.h"
 
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray <NSDictionary*>*dataArray;
+
+@property (nonatomic, copy) NSString *test;
+@property (nonatomic, strong) TestVC2 *vc;
 
 @end
 
@@ -22,10 +26,34 @@
     //
     self.title = @"Hello world";
     //
-    [self initData];
+    //[self initData];
     
-    [self regexSearchString];
+    //[self regexSearchString];
+    
+    
+    dispatch_block_t block = dispatch_block_create(0, ^{
+        self.test = @"This is test.";
+        NSLog(@"test: %@", self.test);
+    });
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), block);
+    
+    UIButton *btn = [[UIButton alloc]init];
+    [btn setTitle:@"Test Btn" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(clickBtnActon:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+    btn.layer.borderWidth = 1.0;
+    btn.layer.borderColor = [UIColor blackColor].CGColor;
+    btn.frame = CGRectMake(100, 100, 100, 45);
 }
+
+-(void)clickBtnActon:(UIButton*)btn {
+    
+    TestVC2 *vc = [[TestVC2 alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+
 
 //正则匹配查找
 -(void)regexSearchString {

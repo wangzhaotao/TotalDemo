@@ -8,9 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol TestVCDelegate <NSObject>
+
+-(void)testMethod;
+
+@end
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TestVC : UIViewController
+
+@property (nonatomic, strong) id<TestVCDelegate> delegate;
+
+-(void)testMethodButtonAction;
+
 
 @end
 
