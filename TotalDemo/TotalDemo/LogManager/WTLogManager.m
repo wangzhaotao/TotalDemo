@@ -145,9 +145,9 @@ static NSUncaughtExceptionHandler *_previousHandler;
 -(void)redirectNSLogToDocumentFolder {
     
     //如果已经连接Xcode调试则不输出到文件
-//    if(isatty(STDOUT_FILENO)) {
-//        return;
-//    }
+    if(isatty(STDOUT_FILENO)) {
+        return;
+    }
     
     UIDevice *device = [UIDevice currentDevice];
     if([[device model] hasSuffix:@"Simulator"]) { //在模拟器不保存到文件中

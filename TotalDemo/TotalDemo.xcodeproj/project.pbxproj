@@ -11,6 +11,8 @@
 		7B20C984228730260009CF8D /* TestVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B20C982228730260009CF8D /* TestVC2.m */; };
 		7B20C985228730260009CF8D /* TestVC2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B20C983228730260009CF8D /* TestVC2.xib */; };
 		7BC78927229941DE00E5CB0B /* WTLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC78926229941DE00E5CB0B /* WTLogManager.m */; };
+		8E0B38C522A8B5CC00FD4F56 /* WTPushAVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0B38C422A8B5CC00FD4F56 /* WTPushAVC.m */; };
+		8E0B38C822A8B5DD00FD4F56 /* WTPushBVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0B38C722A8B5DD00FD4F56 /* WTPushBVC.m */; };
 		8E0C938E2266BD1000E38C50 /* WTOperationCancelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0C938D2266BD1000E38C50 /* WTOperationCancelVC.m */; };
 		8E1F7D942294093000F51D1A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E1F7D932294093000F51D1A /* GoogleService-Info.plist */; };
 		8E1F7D9822940A3E00F51D1A /* WTFirebaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1F7D9722940A3E00F51D1A /* WTFirebaseManager.m */; };
@@ -55,6 +57,8 @@
 		8EBC2584222E493900971CBD /* TestDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EBC2583222E493900971CBD /* TestDrawView.m */; };
 		8ECCAA6E2211855000A25A0F /* BCFLRefreshBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECCAA6D2211855000A25A0F /* BCFLRefreshBtn.m */; };
 		8ECCAA712211857C00A25A0F /* WTRefreshBtnVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECCAA702211857C00A25A0F /* WTRefreshBtnVC.m */; };
+		8ED119FA22B0DB4D007C2E65 /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED119F922B0DB4D007C2E65 /* HomeKit.framework */; };
+		8ED119FE22B0DF73007C2E65 /* WTHomeKitVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED119FD22B0DF73007C2E65 /* WTHomeKitVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +87,10 @@
 		7BC78926229941DE00E5CB0B /* WTLogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTLogManager.m; sourceTree = "<group>"; };
 		7EAE420404D8DC20A5C5BD45 /* Pods-TotalDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TotalDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TotalDemo/Pods-TotalDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		855DCEF6320993AD7D585372 /* Pods_TotalDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TotalDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E0B38C322A8B5CC00FD4F56 /* WTPushAVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTPushAVC.h; sourceTree = "<group>"; };
+		8E0B38C422A8B5CC00FD4F56 /* WTPushAVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTPushAVC.m; sourceTree = "<group>"; };
+		8E0B38C622A8B5DD00FD4F56 /* WTPushBVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTPushBVC.h; sourceTree = "<group>"; };
+		8E0B38C722A8B5DD00FD4F56 /* WTPushBVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTPushBVC.m; sourceTree = "<group>"; };
 		8E0C938C2266BD1000E38C50 /* WTOperationCancelVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTOperationCancelVC.h; sourceTree = "<group>"; };
 		8E0C938D2266BD1000E38C50 /* WTOperationCancelVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTOperationCancelVC.m; sourceTree = "<group>"; };
 		8E1F7D932294093000F51D1A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -168,6 +176,10 @@
 		8ECCAA6D2211855000A25A0F /* BCFLRefreshBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCFLRefreshBtn.m; sourceTree = "<group>"; };
 		8ECCAA6F2211857C00A25A0F /* WTRefreshBtnVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTRefreshBtnVC.h; sourceTree = "<group>"; };
 		8ECCAA702211857C00A25A0F /* WTRefreshBtnVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTRefreshBtnVC.m; sourceTree = "<group>"; };
+		8ED119F822B0DB4D007C2E65 /* TotalDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TotalDemo.entitlements; sourceTree = "<group>"; };
+		8ED119F922B0DB4D007C2E65 /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
+		8ED119FC22B0DF73007C2E65 /* WTHomeKitVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTHomeKitVC.h; sourceTree = "<group>"; };
+		8ED119FD22B0DF73007C2E65 /* WTHomeKitVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTHomeKitVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +187,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ED119FA22B0DB4D007C2E65 /* HomeKit.framework in Frameworks */,
 				261DB1912C43C1FA290A72EE /* Pods_TotalDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,6 +216,29 @@
 				7BC78926229941DE00E5CB0B /* WTLogManager.m */,
 			);
 			path = LogManager;
+			sourceTree = "<group>";
+		};
+		8E0B38C222A8B59C00FD4F56 /* CustomNavgationPush */ = {
+			isa = PBXGroup;
+			children = (
+				8E0B38C322A8B5CC00FD4F56 /* WTPushAVC.h */,
+				8E0B38C422A8B5CC00FD4F56 /* WTPushAVC.m */,
+				8E0B38C622A8B5DD00FD4F56 /* WTPushBVC.h */,
+				8E0B38C722A8B5DD00FD4F56 /* WTPushBVC.m */,
+			);
+			path = CustomNavgationPush;
+			sourceTree = "<group>";
+		};
+		8E0B38C922A8B98800FD4F56 /* TestVC */ = {
+			isa = PBXGroup;
+			children = (
+				8E52D0D321E09E8000E8BD9C /* TestVC.h */,
+				8E52D0D421E09E8000E8BD9C /* TestVC.m */,
+				7B20C981228730260009CF8D /* TestVC2.h */,
+				7B20C982228730260009CF8D /* TestVC2.m */,
+				7B20C983228730260009CF8D /* TestVC2.xib */,
+			);
+			path = TestVC;
 			sourceTree = "<group>";
 		};
 		8E0C938B2266BCE400E38C50 /* OperationCancel */ = {
@@ -277,16 +313,15 @@
 		8E52D09021E054BA00E8BD9C /* TotalDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8ED119F822B0DB4D007C2E65 /* TotalDemo.entitlements */,
 				8E52D09121E054BA00E8BD9C /* AppDelegate.h */,
 				8E52D09221E054BA00E8BD9C /* AppDelegate.m */,
 				8E52D09421E054BA00E8BD9C /* ViewController.h */,
 				8E52D09521E054BA00E8BD9C /* ViewController.m */,
-				8E52D0D321E09E8000E8BD9C /* TestVC.h */,
-				8E52D0D421E09E8000E8BD9C /* TestVC.m */,
-				7B20C981228730260009CF8D /* TestVC2.h */,
-				7B20C982228730260009CF8D /* TestVC2.m */,
-				7B20C983228730260009CF8D /* TestVC2.xib */,
 				8E52D09F21E054BB00E8BD9C /* Info.plist */,
+				8ED119FB22B0DF4D007C2E65 /* HomeKitTest */,
+				8E0B38C922A8B98800FD4F56 /* TestVC */,
+				8E0B38C222A8B59C00FD4F56 /* CustomNavgationPush */,
 				7BC78924229941D500E5CB0B /* LogManager */,
 				8E1F7D9522940A1900F51D1A /* Tools */,
 				8E1F7D922294092800F51D1A /* libs */,
@@ -470,6 +505,15 @@
 			path = RefreshButton;
 			sourceTree = "<group>";
 		};
+		8ED119FB22B0DF4D007C2E65 /* HomeKitTest */ = {
+			isa = PBXGroup;
+			children = (
+				8ED119FC22B0DF73007C2E65 /* WTHomeKitVC.h */,
+				8ED119FD22B0DF73007C2E65 /* WTHomeKitVC.m */,
+			);
+			path = HomeKitTest;
+			sourceTree = "<group>";
+		};
 		ACDDB8F6490FD249D856A185 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -482,6 +526,7 @@
 		DE1D5E651867AC6EA56D0399 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8ED119F922B0DB4D007C2E65 /* HomeKit.framework */,
 				855DCEF6320993AD7D585372 /* Pods_TotalDemo.framework */,
 			);
 			name = Frameworks;
@@ -556,6 +601,11 @@
 				TargetAttributes = {
 					8E52D08D21E054BA00E8BD9C = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.HomeKit = {
+								enabled = 1;
+							};
+						};
 					};
 					8E52D0A521E054BB00E8BD9C = {
 						CreatedOnToolsVersion = 10.1;
@@ -683,6 +733,7 @@
 				8E52D0CE21E05E6100E8BD9C /* WTWebViewVC.m in Sources */,
 				8EB93D0E222F6248005FAF7B /* WTGuidePage5VC.m in Sources */,
 				8EB93D08222F622F005FAF7B /* WTGuidePage3VC.m in Sources */,
+				8E0B38C822A8B5DD00FD4F56 /* WTPushBVC.m in Sources */,
 				8EB93D0B222F623D005FAF7B /* WTGuidePage4VC.m in Sources */,
 				8EBC2581222E226A00971CBD /* UIColor+RectExtension.m in Sources */,
 				8E0C938E2266BD1000E38C50 /* WTOperationCancelVC.m in Sources */,
@@ -700,12 +751,14 @@
 				8EBC2578222E12E500971CBD /* BCLocalStorageVC.m in Sources */,
 				8EB93CFC222F5FB8005FAF7B /* YFWeakRef.m in Sources */,
 				8E52D09321E054BA00E8BD9C /* AppDelegate.m in Sources */,
+				8E0B38C522A8B5CC00FD4F56 /* WTPushAVC.m in Sources */,
 				8E52D0CB21E0594300E8BD9C /* WTRichTextClickVC.m in Sources */,
 				8E357F92225CC56F00D55C31 /* BSBacktraceLogger.m in Sources */,
 				8E52D0DE21E0AA5300E8BD9C /* HWGuidePageManager.m in Sources */,
 				8E357F95225CC59900D55C31 /* WTThreadLogVC.m in Sources */,
 				8EB93CF9222F5F39005FAF7B /* UIViewController+Extension.m in Sources */,
 				8E8A3D2C225DD2A400713A08 /* WTCrashExceptionVC.m in Sources */,
+				8ED119FE22B0DF73007C2E65 /* WTHomeKitVC.m in Sources */,
 				8ECCAA6E2211855000A25A0F /* BCFLRefreshBtn.m in Sources */,
 				8EB93D05222F621F005FAF7B /* WTGuidePage2VC.m in Sources */,
 			);
@@ -873,6 +926,7 @@
 			baseConfigurationReference = 7EAE420404D8DC20A5C5BD45 /* Pods-TotalDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TotalDemo/TotalDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = RNS9QEVKGH;
@@ -883,7 +937,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wzt.TotalDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wzt.TylerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -894,6 +948,7 @@
 			baseConfigurationReference = 3262EF3D513423B366504D57 /* Pods-TotalDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TotalDemo/TotalDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RNS9QEVKGH;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -903,7 +958,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wzt.TotalDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wzt.TylerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

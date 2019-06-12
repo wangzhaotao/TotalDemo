@@ -29,7 +29,7 @@
     [[WTFirebaseManager share]fetchConfig];
     
     //日志
-    [[WTLogManager share]initRedirectLogToFile];
+    //[[WTLogManager share]initRedirectLogToFile];
     
     //iPhoneX 适配
     [self updateBarHeightToiPhoneX];

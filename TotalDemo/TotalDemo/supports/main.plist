@@ -5,6 +5,22 @@
 	<key>datas</key>
 	<array>
 		<dict>
+			<key>vc</key>
+			<string>WTHomeKitVC</string>
+			<key>method</key>
+			<string>clickCellAction:</string>
+			<key>title</key>
+			<string>HomeKit智能家居</string>
+		</dict>
+		<dict>
+			<key>vc</key>
+			<string>WTPushAVC</string>
+			<key>method</key>
+			<string>clickCellAction:</string>
+			<key>title</key>
+			<string>自定义导航跳转</string>
+		</dict>
+		<dict>
 			<key>title</key>
 			<string>发送App打印日志到指定邮箱</string>
 		</dict>
@@ -42,7 +58,7 @@
 		</dict>
 		<dict>
 			<key>vc</key>
-			<string>TestVC</string>
+			<string>TestVC2</string>
 			<key>method</key>
 			<string>clickCellAction:</string>
 			<key>title</key>
